@@ -1,0 +1,6 @@
+{
+  "name": "3T Intercool & Service - วิศวกรรมระบบความเย็นและระบายอากาศ",
+  "description": "บริษัท 3ต อินเตอร์คูล แอนด์ เซอร์วิส จำกัด ผู้นำด้านวิศวกรรมระบบปรับอากาศ ห้องเย็น Cold Room ตู้แช่พาณิชย์ และระบบท่อลมระบายอากาศครบวงจร",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
