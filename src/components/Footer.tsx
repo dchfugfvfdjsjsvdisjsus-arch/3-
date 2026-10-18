@@ -17,6 +17,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 alt="3T Intercool & Service"
                 className="h-10 w-auto object-contain"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRy1OzkIMpI71VvSLTpewUWpU4v0vX8iI7Op8o6m4iTV6pcbsO_oa9gcsOgU8hJ_WIxWFb7gXmC_ki_xqwn6AgGK7vx3jxtAX9JSD5T_AYaGa_wFCtjJvaXDApwqQJQk_IHcfCw95VhqRlpMnvelQU5r9eZQgg5jJdtGEl9XM5pHIFH_zZCgmmFR8GTc1M0VJ4ZKgvKBum0yaGNW0XMhFgy5wZ6K_Sro1dOBrRzZgWG7bgSAiVJXwaHo_bOl5uoqGUIQ"
+                referrerPolicy="no-referrer"
               />
               <span className="font-headline-md text-sm font-bold tracking-tight text-primary uppercase">
                 3T INTERCOOL & SERVICE

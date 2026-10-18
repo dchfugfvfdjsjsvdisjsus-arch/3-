@@ -31,6 +31,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   useEffect(() => {
     if (initialDetails) {
       setProjectDetails(initialDetails);
+      setSubmitted(false);
     }
   }, [initialDetails]);
 
@@ -163,12 +164,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             </div>
 
             {/* Quick Map Preview */}
-            <div
-              className="w-full h-44 bg-surface-container rounded-xl overflow-hidden shadow-inner flex flex-col items-center justify-center text-on-surface-variant relative border border-outline-variant/30 p-4 text-center group cursor-pointer"
-              onClick={() => {
-                const encodedAddress = encodeURIComponent(COMPANY_INFO.address);
-                window.open(`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`, '_blank');
-              }}
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(COMPANY_INFO.address)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-44 bg-surface-container rounded-xl overflow-hidden shadow-inner flex flex-col items-center justify-center text-on-surface-variant relative border border-outline-variant/30 p-4 text-center group cursor-pointer block"
               title="คลิกเพื่อเปิดแผนที่ Google Maps นำทาง"
             >
               <span className="material-symbols-outlined text-3xl text-secondary mb-1 group-hover:scale-110 transition-transform">
@@ -184,7 +184,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 เปิด Google Maps นำทาง
                 <span className="material-symbols-outlined text-xs">open_in_new</span>
               </span>
-            </div>
+            </a>
           </div>
 
           {/* Right: Interactive Consultation & RFQ Form */}

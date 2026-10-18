@@ -12,7 +12,9 @@ export const EmergencyModal: React.FC<EmergencyModalProps> = ({ isOpen, onClose 
   if (!isOpen) return null;
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(COMPANY_INFO.hotline);
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(COMPANY_INFO.hotline).catch(() => {});
+    }
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

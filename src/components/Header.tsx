@@ -45,6 +45,7 @@ export const Header: React.FC<HeaderProps> = ({
             alt="3T Intercool & Service Logo"
             className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105 shrink-0"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRy1OzkIMpI71VvSLTpewUWpU4v0vX8iI7Op8o6m4iTV6pcbsO_oa9gcsOgU8hJ_WIxWFb7gXmC_ki_xqwn6AgGK7vx3jxtAX9JSD5T_AYaGa_wFCtjJvaXDApwqQJQk_IHcfCw95VhqRlpMnvelQU5r9eZQgg5jJdtGEl9XM5pHIFH_zZCgmmFR8GTc1M0VJ4ZKgvKBum0yaGNW0XMhFgy5wZ6K_Sro1dOBrRzZgWG7bgSAiVJXwaHo_bOl5uoqGUIQ"
+            referrerPolicy="no-referrer"
             onError={(e) => {
               (e.target as HTMLElement).style.display = 'none';
             }}
@@ -54,7 +55,7 @@ export const Header: React.FC<HeaderProps> = ({
               3T INTERCOOL
             </span>
             <span className="font-label-eyebrow text-[9.5px] sm:text-[10px] text-secondary tracking-widest uppercase whitespace-nowrap leading-none mt-0.5">
-              Engineering &amp; Service
+              Engineering & Service
             </span>
           </div>
         </button>

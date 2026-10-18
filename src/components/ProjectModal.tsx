@@ -22,6 +22,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           <img
             alt={project.title}
             src={project.imageUrl}
+            referrerPolicy="no-referrer"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>

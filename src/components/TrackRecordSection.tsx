@@ -108,7 +108,13 @@ export const TrackRecordSection: React.FC<TrackRecordSectionProps> = ({
                 return (
                   <button
                     key={btn.id}
-                    onClick={() => setActiveCategory(btn.id)}
+                    onClick={() => {
+                      if (btn.id === 'all') {
+                        handleResetAllFilters();
+                      } else {
+                        setActiveCategory(btn.id);
+                      }
+                    }}
                     className={`px-3 py-1.5 rounded font-label-technical text-xs font-semibold transition-all cursor-pointer ${
                       isActive
                         ? 'bg-primary text-white shadow-xs'
@@ -186,6 +192,8 @@ export const TrackRecordSection: React.FC<TrackRecordSectionProps> = ({
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       src={item.imageUrl}
+                      referrerPolicy="no-referrer"
+                      loading="lazy"
                     />
                     <span className="absolute top-3 left-3 bg-primary/85 backdrop-blur-sm text-white px-2.5 py-1 rounded text-xs font-label-eyebrow">
                       {item.client}

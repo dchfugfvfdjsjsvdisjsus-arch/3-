@@ -93,6 +93,7 @@ export const Hero: React.FC<HeroProps> = ({
                   alt="Cooling Tower & Compressor Works"
                   className="w-full h-72 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                   src={featuredProject.imageUrl}
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-3 left-3 bg-primary/85 backdrop-blur-md px-3 py-1 rounded text-white font-label-eyebrow text-xs flex items-center gap-1.5 shadow-sm">
                   <span className="w-2 h-2 rounded-full bg-secondary-container"></span>
